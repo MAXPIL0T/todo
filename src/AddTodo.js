@@ -21,10 +21,12 @@ const AddTodo = () => {
     };
 
     return (
-        <form onSubmit={addTodo}>
-            <input type="text" name={text} onChange={updateText} />
-            <button>Add Todo</button>
-        </form>
+        <div className="AddTodo">
+            <form onSubmit={addTodo}>
+                <input type="text" name={text} onChange={updateText} />
+                <button>Add Todo</button>
+            </form>
+        </div>
     );
 };
 

@@ -1,38 +1,85 @@
 .App {
-  text-align: center;
+  height: 100%;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-content {
+  max-height: fit-content;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Nav {
   display: flex;
+  width: 100%;
+  height: 10%;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: auto;
+  text-align: center;
+  background-color: rgb(27, 24, 48);
+  color: rgb(132, 150, 199);
 }
 
-.App-link {
-  color: #61dafb;
+.Nav p {
+  font-size: 4.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.AddTodo {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  margin-top: 2rem;
+  justify-content: space-around;
+  color: rgb(19, 17, 32);
+}
+
+.AddTodo input {
+  background-color: rgb(230, 108, 9);
+  border: 0.2rem solid rgb(230, 108, 9);
+  border-radius: 0.5rem;
+  height: 4rem;
+  width: 50%;
+  min-width: fit-content;
+  font-size: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.AddTodo button {
+  background-color: rgb(230, 108, 9);
+  border: 0.2rem solid rgb(230, 108, 9);
+  border-radius: 0.5rem;
+  height: 4rem;
+  width: fit-content;
+  font-size: 2rem;
+  margin-left: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.AddTodo button:hover {
+  background-color: transparent;
+  color: rgb(230, 108, 9);
+  cursor: pointer;
+}
+
+.TodoList {
+  width: 100%;
+  height: fit-content;
+}
+
+.Todo {
+  height: fit-content;
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  color: rgb(230, 108, 9);
+  justify-content: space-around;
+}
+
+.Todo p {
+  font-size: 2rem;
+  border-bottom: 0.5rem;
+  border-color: rgb(230, 108, 9);
 }

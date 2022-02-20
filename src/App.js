@@ -8,7 +8,7 @@ import AddTodo from './AddTodo';
 function App() {
   return (
     <TodoProvider>
-      <div className="app">
+      <div className="App">
         <Nav/>
         <AddTodo/>
         <TodoList/>

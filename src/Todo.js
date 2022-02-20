@@ -4,7 +4,7 @@ import RemoveTodo from './RemoveTodo';
 function Todo(props) {
     
     return (
-        <div className="todo">
+        <div className="Todo">
             <p>{props.text}</p>
             <RemoveTodo id={props.id}/>
         </div>

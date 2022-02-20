@@ -10,7 +10,7 @@ const RemoveTodo = (props) => {
     };
 
     return (
-        <button onClick={removeTodo}>id = {props.id}</button>
+        <button onClick={removeTodo}>Remove</button>
     );
 };
 
