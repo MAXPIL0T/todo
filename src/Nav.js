@@ -6,7 +6,6 @@ function Nav() {
             <p>My amazing todo list</p>
         </div>
     );
-
 }
 
 export default Nav;
