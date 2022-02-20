@@ -17,13 +17,14 @@ const AddTodo = () => {
 
     const addTodo = e => {
         e.preventDefault();
-        setTodos(prevTodos => [{text: text, id: getNewID()}, ...prevTodos])
+        setTodos(prevTodos => [{text: text, id: getNewID()}, ...prevTodos]);
+        setText("");
     };
 
     return (
         <div className="AddTodo">
             <form onSubmit={addTodo}>
-                <input type="text" name={text} onChange={updateText} />
+                <input value={text} onChange={updateText} />
                 <button>Add Todo</button>
             </form>
         </div>
