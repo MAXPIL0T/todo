@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Nav from './Nav';
+import Footer from './Footer';
 import TodoList from './TodoList';
 import { TodoProvider } from './TodoContext';
 import AddTodo from './AddTodo';
@@ -7,13 +8,17 @@ import AddTodo from './AddTodo';
 
 function App() {
   return (
-    <TodoProvider>
-      <div className="App">
+    <div className="App">
+      <div className="content">
         <Nav/>
-        <AddTodo/>
-        <TodoList/>
+        <TodoProvider>
+          <AddTodo/>
+          <TodoList/>
+        </TodoProvider>
       </div>
-    </TodoProvider>
+      <Footer/>
+    </div>
+    
   );
 }
 

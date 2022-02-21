@@ -3,18 +3,19 @@
   width: 100%;
 }
 
-.main-content {
-  max-height: fit-content;
+.content {
+  min-height: 96.75%;
+  height: fit-content;
   width: 100%;
 }
 
 .Nav {
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
   width: 100%;
-  height: 10%;
-  flex-direction: column;
+  height: fit-content;
   margin: auto;
-  text-align: center;
   background-color: rgb(27, 24, 48);
   color: rgb(132, 150, 199);
 }
@@ -23,19 +24,40 @@
   font-size: 4.5rem;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
+  width: 100%;
+  text-align: center;
+  flex-direction: row;
+  align-self: center;
+}
+
+.Nav img {
+  display: block;
+  width: 4rem;
+  height: auto;
+  align-self: flex-end;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.Nav a {
+  height: fit-content;
+  width: fit-content;
+  align-self: center;
 }
 
 .AddTodo {
   width: 100%;
   height: fit-content;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
   text-align: center;
-  margin-top: 2rem;
   justify-content: space-around;
   color: rgb(19, 17, 32);
 }
 
 .AddTodo input {
   background-color: rgb(230, 108, 9);
+  color: rgb(19, 17, 32);
   border: 0.2rem solid rgb(230, 108, 9);
   border-radius: 0.5rem;
   height: 4rem;
@@ -48,12 +70,15 @@
 
 .AddTodo button {
   background-color: rgb(230, 108, 9);
+  color: rgb(19, 17, 32);
   border: 0.2rem solid rgb(230, 108, 9);
   border-radius: 0.5rem;
   height: 4rem;
   width: fit-content;
   font-size: 2rem;
   margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -62,6 +87,11 @@
   background-color: transparent;
   color: rgb(230, 108, 9);
   cursor: pointer;
+}
+
+.AddTodo p {
+  color: rgb(230, 108, 9);
+  margin-top: 0.5rem;
 }
 
 .TodoList {
@@ -73,7 +103,6 @@
   height: fit-content;
   width: 100%;
   text-align: center;
-  margin-top: 2rem;
   color: rgb(230, 108, 9);
   justify-content: space-around;
 }
@@ -84,7 +113,40 @@
   border-color: rgb(230, 108, 9);
 }
 
-.AddTodo p {
-  color: rgb(230, 108, 9);
+.Todo button {
+  background-color: rgb(230, 108, 9);
+  border: 0.2rem solid rgb(230, 108, 9);
+  color: rgb(19, 17, 32);
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  width: fit-content;
+  font-size: 1.5rem;
   margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.Todo button:hover {
+  background-color: transparent;
+  color: rgb(230, 108, 9);
+  cursor: pointer;
+}
+
+.Footer {
+  width: 100%;
+  height: 3%;
+  margin: auto;
+  background-color: rgb(27, 24, 48);
+  color: rgb(132, 150, 199);
+  text-align: center;
+  align-items: center;
+}
+
+.Footer p {
+  font-size: 1.5rem;
+  height: fit-content;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0.2rem;
 }
