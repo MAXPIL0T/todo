@@ -83,3 +83,8 @@
   border-bottom: 0.5rem;
   border-color: rgb(230, 108, 9);
 }
+
+.AddTodo p {
+  color: rgb(230, 108, 9);
+  margin-top: 0.5rem;
+}

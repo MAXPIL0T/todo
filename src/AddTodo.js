@@ -6,6 +6,7 @@ let last_used_id = 0;
 const AddTodo = () => {
     const [text, setText] = useState("");
     const [todos, setTodos] = useContext(TodoContext);
+    const [warning, setWarning] = useState(false);
 
     const updateText = e => {
         setText(e.target.value);
@@ -17,8 +18,13 @@ const AddTodo = () => {
 
     const addTodo = e => {
         e.preventDefault();
-        setTodos(prevTodos => [{text: text, id: getNewID()}, ...prevTodos]);
-        setText("");
+        if (text === "") {
+            setWarning(true);
+        } else {
+            setTodos(prevTodos => [{text: text, id: getNewID()}, ...prevTodos]);
+            setText("");
+            setWarning(false);
+        }
     };
 
     return (
@@ -26,6 +32,7 @@ const AddTodo = () => {
             <form onSubmit={addTodo}>
                 <input value={text} onChange={updateText} />
                 <button>Add Todo</button>
+                {warning? <p>Can't add an empty todo!</p>:""}
             </form>
         </div>
     );
