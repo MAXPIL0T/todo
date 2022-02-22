@@ -13,7 +13,7 @@
 .deployment
 
 # misc
-./vscode
+/.vscode
 .DS_Store
 .env.local
 .env.development.local
