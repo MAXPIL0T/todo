@@ -9,6 +9,7 @@ const AddTodo = () => {
     const [warning, setWarning] = useState(false);
 
     const updateText = e => {
+        if (false) { console.log(todos); }
         setText(e.target.value);
     };
 

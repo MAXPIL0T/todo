@@ -6,11 +6,11 @@ import m from './img/m.svg';
 function Nav() {
     return (
         <div className="Nav">
-            <a href="https://github.com/MAXPIL0T" target="_blank">
+            <a href="https://www.maxkuechen.com" target="_blank" rel="noopener noreferrer">
                 <img src={m} alt="M" />
             </a>
             <p>todo.</p>
-            <a href="https://github.com/MAXPIL0T/todo" target="_blank">
+            <a href="https://github.com/MAXPIL0T/todo" target="_blank" rel="noopener noreferrer">
                 <img src={github} alt="GitHub" />
             </a>
         </div>

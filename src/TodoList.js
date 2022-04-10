@@ -3,7 +3,7 @@ import Todo from "./Todo";
 import { TodoContext } from "./TodoContext";
 
 const TodoList = () => {
-    const [todos, setTodos] = useContext(TodoContext);
+    const [todos] = useContext(TodoContext);
 
     return (
         <div className="TodoList">
